@@ -9,5 +9,6 @@
 export const resolvers = {
     Query: {
         // ... - Your resolvers here
+        hello: async () => "Hello world! 🍊"
     }
 };

@@ -9,5 +9,6 @@
 export const typeDefs = `
     type Query {
         # Your type definitions here
+        hello: String!
     }
 `;
