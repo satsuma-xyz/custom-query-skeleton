@@ -7,8 +7,20 @@
 
 // Do not change this export. Satsuma expects a non-default `resolvers` string to be exported from this file.
 export const typeDefs = `
+    type AvailableEntityTable {
+        name: String!
+        description: String
+        columns: [String]
+    }
+    
+    type CustomQueryHelpers {
+      available_entity_tables: [AvailableEntityTable]
+      something_else: String
+    }
+    
     type Query {
         # Your type definitions here
-        hello: String!
+        hello: String
+        custom_query_helpers: CustomQueryHelpers
     }
 `;
