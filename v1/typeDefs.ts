@@ -15,12 +15,10 @@ export const typeDefs = `
     
     type CustomQueryHelpers {
       available_entity_tables: [AvailableEntityTable]
-      something_else: String
     }
     
     type Query {
         # Your type definitions here
-        hello: String
         custom_query_helpers: CustomQueryHelpers
     }
 `;
